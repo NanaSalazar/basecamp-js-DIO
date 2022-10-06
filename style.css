@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+:root {
+    --color0: #e5e8e8;
+    --color1: #4e545c;
+    --color2: #8d9797;
+    --color3: #000401;
+}
+
+body {
+	background-color: var(--color0);
+	color: var(--color1);
+	margin: 0;
+	font-family: 'Quicksand';
+}
+
+body.dark-mode {
+	background-color: var(--color3);
+	color: var(--color0);
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	background-color: var(--color1);
+	padding: 16px;
+	color: var(--color0);
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer.dark-mode {
+	background-color: var(--color2);
+	color: var(--color3);
+}
+
+button {
+	border-radius: 40px;
+	font-size: 1.5rem;
+	height: 60px;
+	width: 200px;
+	border: none;
+	background-color: var(--color1);
+	color: var(--color0);
+	transition: all 0.5s linear;
+}
+
+button:hover {
+	background-color: var(--color3);
+    cursor: pointer;;
+}
+
+button.dark-mode {
+	background-color: var(--color0);
+	color: var(--color1);
+}
+
+button.dark-mode:hover {
+	background-color: var(--color1);
+	color: var(--color0);
+}
